@@ -67,7 +67,10 @@
             <item name="off" value="0x00"/>
         </value>
     </command>
-    <command name="volume" code="0x12" mode="rw"/><!-- Set/get display audio volume. Return number. Command: 'volume 0-100', 'volume?' -->
+    <command name="volume" code="0x12" mode="rw">
+        <!-- Set/get display audio volume. Return number. Command: 'volume 0-100', 'volume?' -->
+        <value name="volume" min="0" max="100"/>
+    </command>
     <command name="mute" code="0x13" mode="rw">
         <!-- Set audio mute on/off or get mute state. Return string. Command: 'mute on|off', 'mute?' -->
         <value>
@@ -115,14 +118,38 @@
     </command>
 
     <command name="screenSize" code="0x19" mode="r"/> <!-- Get screen size (diagonal) in inches. Command: 'screensize?' -->
-    <command name="contrast" code="0x24" mode="rw"/><!-- Set/get display contrast. Return number. Command: 'contrast 0-100', 'contrast?' -->
-    <command name="brightness" code="0x25" mode="rw"/><!-- Set/get display brightness. Return number. Command: 'brightness 0-100', 'brightness?' -->
-    <command name="sharpness" code="0x26" mode="rw"/><!-- Set/get display sharpness. Return number. Command: 'sharpness 0-100', 'sharpness?' -->
-    <command name="saturation" code="0x27" mode="rw"/><!-- Set/get display color saturation. Return number. Command: 'saturation 0-100', 'saturation?' -->
-    <command name="tint" code="0x28" mode="rw"/><!-- Set/get display tint. Return number. Command: 'tint 0-100', 'tint?' -->
-    <command name="rgbContrast" code="0x37" mode="rw"/><!-- Set/get display RGB contrast. Return number. Command: 'rgbContrast 0-100', 'rgbContrast?' -->
-    <command name="rgbBrightness" code="0x38" mode="rw"/><!-- Set/get display RGB brightness. Return number. Command: 'rgbBrightness 0-100', 'rgbBrightness?' -->
-    <command name="fanspeed" code="0x44" mode="rw"/> <!-- Set/get fan speed. Return number. Command: 'fanspeed 0-100', 'fanspeed?' -->
+    <command name="contrast" code="0x24" mode="rw">
+        <!-- Set/get display contrast. Return number. Command: 'contrast 0-100', 'contrast?' -->
+        <value name="contrast" min="0" max="100"/>
+    </command>
+    <command name="brightness" code="0x25" mode="rw">
+        <!-- Set/get display brightness. Return number. Command: 'brightness 0-100', 'brightness?' -->
+        <value name="brightness" min="0" max="100"/>
+    </command>
+    <command name="sharpness" code="0x26" mode="rw">
+        <!-- Set/get display sharpness. Return number. Command: 'sharpness 0-100', 'sharpness?' -->
+        <value name="sharpness" min="0" max="100"/>
+    </command>
+    <command name="saturation" code="0x27" mode="rw">
+        <!-- Set/get display color saturation. Return number. Command: 'saturation 0-100', 'saturation?' -->
+        <value name="saturation" min="0" max="100"/>
+    </command>
+    <command name="tint" code="0x28" mode="rw"/>
+        <!-- Set/get display tint. Return number. Command: 'tint 0-100', 'tint?' -->
+        <value name="tint" min="0" max="100"/>
+    </command>
+    <command name="rgbContrast" code="0x37" mode="rw">
+        <!-- Set/get display RGB contrast. Return number. Command: 'rgbContrast 0-100', 'rgbContrast?' -->
+        <value name="rgbContrast" min="0" max="100"/>
+    </command>
+    <command name="rgbBrightness" code="0x38" mode="rw">
+        <!-- Set/get display RGB brightness. Return number. Command: 'rgbBrightness 0-100', 'rgbBrightness?' -->
+        <value name="rgbBrightness" min="0" max="100"/>
+    </command>
+    <command name="fanspeed" code="0x44" mode="rw">
+        <!-- Set/get fan speed. Return number. Command: 'fanspeed 0-100', 'fanspeed?' -->
+        <value name="fanspeed" min="0" max="100"/>
+    </command>
     <command name="wallMode" code="0x5C" mode="rw">
         <!-- Set/get border compensation for wall/matrix mode. Return string. Command: 'wallMode natural|full', 'wallmode?' -->
         <value>
