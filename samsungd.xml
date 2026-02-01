@@ -58,7 +58,7 @@
         <value name="NTimeNF"/>
         <value name="FTimeNF"/>
     </command>
-    <command name="videocontrol" code="0x04" mode="r">
+    <command name="videoControl" code="0x04" mode="r">
     <!-- Get current video control info of display. Return object. Command: 'videocontrol?' -->
         <value name="contrast"/>
         <value name="brightness"/>
