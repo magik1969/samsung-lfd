@@ -6,5 +6,11 @@
 - Some XML improvements and fixes
 ## 1.0.4/2025-03-28
 - Added 14 more inputs in XML
+## 1.0.5/2025-05-16
+- More commands added in XML
+## 1.1.0/2025-05-21
+- Multiple aliases for value names support
+## 1.2.0/2026-02-02
+- Added video (0x04) control
 ## TODO
 
