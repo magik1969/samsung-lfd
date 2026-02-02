@@ -58,8 +58,8 @@
         <value name="NTimeNF"/>
         <value name="FTimeNF"/>
     </command>
-    <command name="videoControl" code="0x04" mode="r">
-    <!-- Get current video control info of display. Return object. Command: 'videocontrol?' -->
+    <command name="video" code="0x04" mode="r">
+    <!-- Get current video control info of display. Return object. Command: 'video?' -->
         <value name="contrast"/>
         <value name="brightness"/>
         <value name="sharpness"/>
@@ -78,7 +78,7 @@
             <item name="12000K" value="0x07"/>
             <item name="13000K" value="0x08"/>
             <item name="14000K" value="0x09"/>
-            <item name="15000K" value="0x10"/>
+            <item name="15000K" value="0x0A"/>
             <item name="6000K" value="0x3C"/>
             <item name="6500K" value="0x41"/>
             <item name="10000K" value="0x64"/>
