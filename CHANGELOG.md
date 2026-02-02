@@ -10,5 +10,7 @@
 - More commands added in XML
 ## 1.1.0/2025-05-21
 - Multiple aliases for value names support
+## 1.2.0/2026-02-02
+- Added video (0x04) control
 ## TODO
 

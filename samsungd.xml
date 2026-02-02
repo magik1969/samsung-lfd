@@ -58,6 +58,37 @@
         <value name="NTimeNF"/>
         <value name="FTimeNF"/>
     </command>
+    <command name="video" code="0x04" mode="r">
+    <!-- Get current video control info of display. Return object. Command: 'video?' -->
+        <value name="contrast"/>
+        <value name="brightness"/>
+        <value name="sharpness"/>
+        <value name="color"/>
+        <value name="tint"/>
+        <value name="colorTone"/>
+        <value name="colorTemp">
+            <!-- Ensure this list matches the color temperature command -->
+            <item name="5000K" value="0x00"/>
+            <item name="6000K" value="0x01"/>
+            <item name="7000K" value="0x02"/>
+            <item name="8000K" value="0x03"/>
+            <item name="9000K" value="0x04"/>
+            <item name="10000K" value="0x05"/>
+            <item name="11000K" value="0x06"/>
+            <item name="12000K" value="0x07"/>
+            <item name="13000K" value="0x08"/>
+            <item name="14000K" value="0x09"/>
+            <item name="15000K" value="0x0A"/>
+            <item name="6000K" value="0x3C"/>
+            <item name="6500K" value="0x41"/>
+            <item name="10000K" value="0x64"/>
+            <item name="2800K" value="0xFD"/>
+            <item name="3000K" value="0xFE"/>
+            <item name="4000K" value="0xFF"/>
+        </value>
+        <value name="unused"/>
+        <!-- One byte of padding -->
+    </command>
     <command name="sernum" code="0x0B" mode="r"/> <!-- Get display serial number. Return string. Command: 'sernum?' -->
     <command name="software" code="0x0E" mode="r"/><!-- Get info and software version. Return string. Command: 'software?' -->
     <command name="power" code="0x11" mode="rw" wDuration="10000">
@@ -170,4 +201,4 @@
     <!--
         0x8B    Video Wall Direct User Control get/set
     -->
-</dev>	
+</dev>
