@@ -16,4 +16,6 @@
 - Input names in samsungd.xml standardisation. Commands input? or status? can return slightly different input name.
 ## 2.0.1/2026-04-20
 - Some new commands
+## 2.0.2/2026-04-24
+- Minor changes in XML
 
